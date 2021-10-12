@@ -2,7 +2,7 @@ module.exports = {
   i18n: {
     // These are all the locales you want to support in
     // your application
-    locales: ['en-US', 'fr', 'nl-NL','ja-JP'],
+    locales: ['en-US', 'fr', 'nl-NL'],
     // This is the default locale you want to be used when visiting
     // a non-locale prefixed path e.g. `/hello`
     defaultLocale: 'en-US',
@@ -11,7 +11,7 @@ module.exports = {
     // Note: subdomains must be included in the domain value to be matched e.g. "fr.example.com".
     domains: [
       {
-        domain: 'en.bassucascompany.com',
+        domain: 'bassucascompany.com',
         defaultLocale: 'en-US',
       },
       {
@@ -21,12 +21,6 @@ module.exports = {
       {
         domain: 'bassucascompany.fr',
         defaultLocale: 'fr',
-        // an optional http field can also be used to test
-        // locale domains locally with http instead of http
-      },
-{
-        domain: 'bassucascompany.ja',
-        defaultLocale: 'ja-JP',
         // an optional http field can also be used to test
         // locale domains locally with http instead of http
       },
