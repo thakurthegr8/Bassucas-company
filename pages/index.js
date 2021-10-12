@@ -36,7 +36,7 @@ export default function Home() {
               <h1 className="font-medium text-center md:text-left">{`Choose categories.`}</h1>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {
-                  categoryData.map(item => <button className="bg-white hover:opacity-80 rounded-full py-1 px-2 text-sm font-semibold border border-black">{item.category}</button>)
+                  categoryData.map((item,index) => <button key={index} className="bg-white hover:opacity-80 rounded-full py-1 px-2 text-sm font-semibold border border-black">{item.category}</button>)
                 }
               </div>
             </div>
